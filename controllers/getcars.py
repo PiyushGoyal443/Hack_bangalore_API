@@ -24,4 +24,4 @@ class GetCarsHandler(RequestHandler):
         self.write({"code" : 200, "message" : "SuccessFull", "data" : ret})
 
     def options(self):
-        set_status(204)
+        self.set_status(204)

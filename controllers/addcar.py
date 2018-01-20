@@ -22,4 +22,4 @@ class AddCarHandler(RequestHandler):
         self.write({"status" : 200, "message" : "Sucessfully Added"})
 
     def options(self):
-        set_status(204)
+        self.set_status(204)
